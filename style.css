@@ -1,0 +1,30 @@
+.title{
+    font-size: 6em;
+    text-align: center;
+}
+
+#btn{
+    text-align: center;
+    padding: auto;
+    background-color: #666;
+}
+
+li{
+    list-style: none;
+}
+
+#start{
+    font-weight: bold;
+}
+
+#delete{
+    font-weight: bold;
+}
+
+#tag {
+    text-align: center;
+    padding-left: 0;
+    background-color: #666;
+    font-weight: bold;
+    color: #fff;
+}
