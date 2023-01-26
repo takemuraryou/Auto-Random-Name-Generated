@@ -6,6 +6,7 @@ const chara = ['ア','イ','ウ','エ','オ','カ','キ','ク','ケ','コ','サ'
                 'モ','ヤ','ユ','ヨ','ラ','リ','ル','レ','ロ','ワ','ヲ','ン']
 let charaLen = chara.length;
 
+
 $(function(){
     // 変数の初期化
     let num = 0;
@@ -16,15 +17,16 @@ $(function(){
         if(num > 5){
         $('li').remove();
         }
-        //numを1つ増やす
+        // 5回生成する
         for(let r = 0; r<= 5; r++){
-        num++;
+        //numを1つ増やす
+            num++;
         for (let i = 0; i< len; i++) {
             obj += chara[Math.floor(Math.random()*charaLen)];
         }
 
         $('ul').append('<li>' + obj + '</li>');
-
+        // 5回生成したら、それ以上増えないようにする
         obj = "";
 
         }
@@ -41,4 +43,8 @@ $(function(){
             num = 0;
         }
     });
+
+    $('#allDel').on('click', function(){
+        $('li').remove();
+    })
 });
