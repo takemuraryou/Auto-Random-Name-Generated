@@ -9,39 +9,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h2 class="title">ランダム命名サイト</h2>
-    </div>
+    <section class="layout">
+        <div class="title">
+            <h2>ランダム命名サイト</h2>
+        </div>
+        
+        文字数
+        <select name="chaNum">
+            <option value="cha3">3</option>
+            <option value="cha4">4</option>
+            <option value="cha5">5</option>
+            <option value="cha6">6</option>
+        </select>
+        
+        生成数
+        <select name="outputNum">
+            <option value="out1">1</option>
+            <option value="out2">2</option>
+            <option value="out3">3</option>
+            <option value="out4">4</option>
+            <option value="out5">5</option>
+            <option value="out10">10</option>
+        </select>
+        
+        <p id="btn">
+            <button id="start">生成</button>
+            <button id="delete">削除</button>
+            <button id="allDel">全て削除</button>
+        </p>
+        
+        <div id="tag">
+            <ul>
+                <!-- ここに名前生成 -->
+            </ul>
+        </div>
+    </section>
     
-    文字数
-    <select name="chaNum">
-        <option value="cha3">3</option>
-        <option value="cha4">4</option>
-        <option value="cha5">5</option>
-        <option value="cha6">6</option>
-    </select>
-
-    生成数
-    <select name="outputNum">
-        <option value="out1">1</option>
-        <option value="out2">2</option>
-        <option value="out3">3</option>
-        <option value="out4">4</option>
-        <option value="out5">5</option>
-        <option value="out10">10</option>
-    </select>
-
-    <p id="btn">
-        <button id="start">生成</button>
-        <button id="delete">削除</button>
-        <button id="allDel">全て削除</button>
-    </p>
-
-    <div id="tag">
-        <ul>
-            <!-- ここに名前生成 -->
-        </ul>
-    </div>
     
     
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
